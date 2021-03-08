@@ -1,3 +1,6 @@
-export PYTHONPATH=/opt/ANDRAX/expliot
+rm -rf /opt/ANDRAX/bin/expliot
+cp -Rf andraxbin/* /opt/ANDRAX/bin
 
-python3 setup.py install
+export PYTHONPATH=/opt/ANDRAX/expliot/lib/python3.7/site-packages/
+
+python3 setup.py install --prefix=/opt/ANDRAX/expliot
